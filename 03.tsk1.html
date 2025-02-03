@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display Tasks</title>
+  <style>
+    /* Task 1 */
+    .inline-element {
+      background-color: lightblue;
+      padding: 5px;
+    }
+
+    /* Task 2 */
+    .inline-div {
+      display: inline;
+      background-color: lightgreen;
+    }
+
+    /* Task 3 */
+    .navbar {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    .navbar a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Task 4 */
+    .inline-span {
+      background-color: lightpink;
+    }
+    .block-span {
+      display: block;
+      background-color: lightcoral;
+      margin: 10px 0;
+    }
+
+    /* Task 5 */
+    .inline-block {
+      display: inline-block;
+      background-color: lightyellow;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      margin-right: 10px;
+    }
+
+    /* Task 6 */
+    .button {
+      display: inline-block;
+      background-color: teal;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 5px;
+    }
+
+    /* Task 7 */
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .inline-block-item {
+      display: inline-block;
+      background-color: lavender;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    /* Task 8 */
+    .gallery img {
+      display: inline-block;
+      margin: 10px;
+      width: 150px;
+      height: 100px;
+    }
+
+    /* Task 9 */
+    .layout {
+      display: flex;
+      gap: 20px;
+    }
+    .block-element {
+      display: block;
+      background-color: lightgray;
+      padding: 10px;
+    }
+    .inline-text {
+      display: inline;
+      background-color: lightgoldenrodyellow;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <p><span class="inline-element">This is an inline element with a background color and padding.</span></p>
+
+  <!-- Task 2 -->
+  <p>This is a sentence with a <div class="inline-div">div element</div> displayed inline.</p>
+
+  <!-- Task 3 -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Task 4 -->
+  <p><span class="inline-span">Inline Span</span></p>
+  <p><span class="block-span">Block Span</span></p>
+
+  <!-- Task 5 -->
+  <div>
+    <div class="inline-block">Box 1</div>
+    <div class="inline-block">Box 2</div>
+  </div>
+
+  <!-- Task 6 -->
+  <p><span class="button">Styled Button</span></p>
+
+  <!-- Task 7 -->
+  <div class="container">
+    <div class="inline-block-item">Item 1</div>
+    <div class="inline-block-item">Item 2</div>
+    <div class="inline-block-item">Item 3</div>
+  </div>
+
+  <!-- Task 8 -->
+  <div class="gallery">
+    <img src="hero_Burger Image.png" alt="Image 1">
+    <img src="hero_Burger Image.png" alt="Image 2">
+    <img src="hero_Burger Image.png" alt="Image 3">
+  </div>
+
+  <!-- Task 9 -->
+  <div class="layout">
+    <div class="block-element">This is a block element.</div>
+    <p>This text contains <span class="inline-text">an inline element</span> for comparison.</p>
+  </div>
+
+</body>
+</html>

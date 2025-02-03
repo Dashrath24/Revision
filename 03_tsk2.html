@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Property Tasks</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Task 1: Float an image to the left and wrap text */
+    .float-left-img {
+      float: left;
+      margin: 10px;
+      width: 150px;
+    }
+
+    /* Task 2: Float a div to the right */
+    .float-right-div {
+      float: right;
+      background-color: lightblue;
+      padding: 10px;
+      width: 150px;
+    }
+
+    /* Task 3: Two-column layout using float */
+    .two-columns .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+    .two-columns .column:nth-child(odd) {
+      background-color: lightgray;
+    }
+    .two-columns .column:nth-child(even) {
+      background-color: lightyellow;
+    }
+
+    /* Task 4: Multiple floated elements with clearfix */
+    .multiple-floats div {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+      margin: 10px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    /* Task 5: Card layout */
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+    .card img {
+      float: left;
+      margin-right: 10px;
+      width: 100px;
+    }
+    .card .content {
+      overflow: hidden;
+    }
+
+    /* Task 6: Blog layout */
+    .blog-post {
+      margin-bottom: 20px;
+    }
+    .blog-post img {
+      float: left;
+      margin: 10px;
+      width: 120px;
+    }
+
+    /* Task 7: Floating elements in both directions */
+    .float-both {
+      overflow: hidden;
+    }
+    .float-both .left {
+      float: left;
+      width: 45%;
+      background-color: lightgreen;
+      padding: 10px;
+      margin-right: 5%;
+    }
+    .float-both .right {
+      float: right;
+      width: 45%;
+      background-color: lightblue;
+      padding: 10px;
+    }
+
+    /* Task 8: Float buttons horizontally */
+    .button-container {
+      overflow: hidden;
+    }
+    .button-container button {
+      float: left;
+      margin-right: 10px;
+      padding: 10px 20px;
+      background-color: teal;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Task 9: Combine floated elements with margin */
+    .spaced-floats img {
+      float: left;
+      margin: 20px;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Task 1: Float an image to the left -->
+  <h2>Task 1: Float an Image to the Left</h2>
+  <img src="hero_Burger Image.png" class="float-left-img" alt="Placeholder Image">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue. Vivamus scelerisque felis a dui scelerisque, id lacinia nunc pretium.</p>
+
+  <!-- Task 2: Float a div to the right -->
+  <h2>Task 2: Float a Div to the Right</h2>
+  <div class="float-right-div">This is a floated div.</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue. Vivamus scelerisque felis a dui scelerisque, id lacinia nunc pretium.</p>
+
+  <!-- Task 3: Two-column layout using float -->
+  <h2>Task 3: Two-Column Layout</h2>
+  <div class="two-columns clearfix">
+    <div class="column">Column 1 content</div>
+    <div class="column">Column 2 content</div>
+  </div>
+
+  <!-- Task 4: Multiple floated elements -->
+  <h2>Task 4: Multiple Floated Elements</h2>
+  <div class="multiple-floats clearfix">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+  </div>
+
+  <!-- Task 5: Card layout -->
+  <h2>Task 5: Card Layout</h2>
+  <div class="card">
+    <img src="hero_Burger Image.png" alt="Card Image">
+    <div class="content">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue.</p>
+    </div>
+  </div>
+
+  <!-- Task 6: Blog layout -->
+  <h2>Task 6: Blog Layout</h2>
+  <div class="blog-post">
+    <img src="hero_Burger Image.png" alt="Blog Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue. Vivamus scelerisque felis a dui scelerisque, id lacinia nunc pretium.</p>
+  </div>
+
+  <!-- Task 7: Floating both directions -->
+  <h2>Task 7: Floating in Both Directions</h2>
+  <div class="float-both clearfix">
+    <div class="left">Content floated left</div>
+    <div class="right">Content floated right</div>
+  </div>
+
+  <!-- Task 8: Align buttons horizontally -->
+  <h2>Task 8: Align Buttons Horizontally</h2>
+  <div class="button-container">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+  </div>
+
+  <!-- Task 9: Combine floated elements with margin -->
+  <h2>Task 9: Combine Floated Elements with Margin</h2>
+  <div class="spaced-floats">
+    <img src="hero_Burger Image.png" alt="Float Image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue. Vivamus scelerisque felis a dui scelerisque, id lacinia nunc pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at sapien sit amet libero bibendum congue.</p>
+  </div>
+
+</body>
+</html>
