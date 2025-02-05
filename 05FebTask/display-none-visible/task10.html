@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 10: Toggle the display of a modal popup with display: none and block</title>
+  <style>
+    #modal {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task 10: Toggle the display of a modal popup with display: none and block</h1>
+  <button onclick="toggleModal()">Open Modal</button>
+  <div id="overlay" onclick="toggleModal()"></div>
+  <div id="modal">
+    <p>This is a modal popup!</p>
+    <button onclick="toggleModal()">Close</button>
+  </div>
+
+  <script>
+    function toggleModal() {
+      const modal = document.getElementById('modal');
+      const overlay = document.getElementById('overlay');
+      const isHidden = modal.style.display === 'none';
+      modal.style.display = isHidden ? 'block' : 'none';
+      overlay.style.display = isHidden ? 'block' : 'none';
+    }
+    // Initialize modal as hidden
+    toggleModal();
+  </script>
+</body>
+</html>

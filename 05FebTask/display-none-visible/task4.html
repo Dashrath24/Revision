@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4: Add an image and toggle its visibility using visibility: hidden</title>
+</head>
+<body>
+  <h1>Task 4: Add an image and toggle its visibility using visibility: hidden</h1>
+  <img id="image" src="../assets/images/movie-1.webp" alt="Sample Image" style="visibility: hidden;">
+  <button onclick="toggleImage()">Toggle Image</button>
+
+  <script>
+    function toggleImage() {
+      const img = document.getElementById('image');
+      img.style.visibility = img.style.visibility === 'hidden' ? 'visible' : 'hidden';
+    }
+  </script>
+</body>
+</html>

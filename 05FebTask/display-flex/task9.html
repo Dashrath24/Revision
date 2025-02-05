@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 9 - Align Self</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: flex-start;
+      height: 200px;
+      gap: 20px;
+      border: 2px dashed #ccc;
+    }
+
+    .flex-container div {
+      background-color: #e91e63;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .flex-container .align-bottom {
+      align-self: flex-end;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div class="align-bottom">Item 3</div>
+  </div>
+</body>
+</html>

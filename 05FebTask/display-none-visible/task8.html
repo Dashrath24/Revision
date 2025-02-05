@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8: Create a tooltip that appears when hovering over a text element</title>
+  <style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltipText {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .tooltip:hover .tooltipText {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <h1>Task 8: Create a tooltip that appears when hovering over a text element</h1>
+  <div class="tooltip">
+    Hover over me
+    <span class="tooltipText">Tooltip text</span>
+  </div>
+</body>
+</html>
