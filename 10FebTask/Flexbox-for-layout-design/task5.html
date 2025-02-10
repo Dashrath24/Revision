@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5: Sidebar and Main Content</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .layout-container {
+      display: flex;
+      width: 100%;
+    }
+    .sidebar {
+      flex: 1;
+      background: #6c5ce7;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .main-content {
+      flex: 3;
+      background: #a29bfe;
+      padding: 30px;
+      font-size: 1.5em;
+      color: #2d3436;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout-container">
+    <div class="sidebar">Sidebar</div>
+    <div class="main-content">Main Content</div>
+  </div>
+</body>
+</html>

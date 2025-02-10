@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 7: Gallery Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f3f9fb;
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 90%;
+    }
+    .image-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: calc(33.33% - 20px);
+      background: #81ecec;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .description {
+      font-weight: bold;
+      color: #2d3436;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="image-item">
+      <img src="../assets/images/movie-1.webp" alt="Image 1">
+      <div class="description">Image 1 Description</div>
+    </div>
+    <div class="image-item">
+      <img src="../assets/images/movie-2.webp" alt="Image 2">
+      <div class="description">Image 2 Description</div>
+    </div>
+    <div class="image-item">
+      <img src="../assets/images/movie-3.webp" alt="Image 3">
+      <div class="description">Image 3 Description</div>
+    </div>
+  </div>
+</body>
+</html>

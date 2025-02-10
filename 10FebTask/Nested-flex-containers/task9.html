@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 9: Navbar with Flex Grow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffeaa7;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #6c5ce7;
+      padding: 20px;
+      color: white;
+    }
+    .logo {
+      flex-grow: 2;
+      font-size: 1.5em;
+    }
+    .nav-links {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-around;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">My Website</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

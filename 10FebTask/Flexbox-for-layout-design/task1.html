@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1: Two-Level Flex Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #e3f2fd;
+    }
+    .flex-container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      border: 5px solid #1565c0;
+      background: #90caf9;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 1200px;
+    }
+    .flex-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: 3px solid #1976d2;
+      background: #42a5f5;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1;
+    }
+    .nested-item {
+      background: #bbdefb;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      color: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">
+      <div class="nested-item">Item 1.1</div>
+      <div class="nested-item">Item 1.2</div>
+    </div>
+    <div class="flex-item">
+      <div class="nested-item">Item 2.1</div>
+      <div class="nested-item">Item 2.2</div>
+    </div>
+  </div>
+</body>
+</html>

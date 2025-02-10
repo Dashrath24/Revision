@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1: Flex Grow Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffeaa7;
+    }
+    .flex-container {
+      display: flex;
+      width: 90%;
+      gap: 10px;
+      background: #fab1a0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .flex-item {
+      flex-grow: 1;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .flex-item:nth-child(1) { background: #6c5ce7; }
+    .flex-item:nth-child(2) { background: #00cec9; }
+    .flex-item:nth-child(3) { background: #ff7675; }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+</body>
+</html>
